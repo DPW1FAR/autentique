@@ -1,0 +1,168 @@
+*{
+    /* para que los bordes no pasen mas de ahi*/
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(235, 210, 65, 0.87);
+
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{font-size: 1.5em;}
+ul{list-style: none;}
+
+
+/* clase para cambiar solo el color de un texto*/
+.color-diferente{ color: blue;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.3);
+    color: white;
+    background-color: black;
+}
+
+button:hover{ background-color: red;}
+/* cotenedores*/
+.contenedor{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color: black;
+}
+header.logo{
+    margin: 0;
+    padding: 15px 20px;
+}
+header.contenedor{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 25px;
+    padding: 10px 15px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+}
+header a:hover{
+    color:chartreuse;
+}
+
+#primero{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 30vh;
+    color: white;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#segundo.contenedor{
+text-align: center;
+padding: 100px 15px;
+}
+
+#nuestros-productos{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    color:white;
+    text-align: center;
+}
+#nuestros-productos_m{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    color:white;
+    text-align: center;
+}
+#nuestros-productos_m p{
+    display: block;
+}
+
+#nuestros-productos.contenedor{
+    padding: 100x 15px;
+}
+
+#nuestros-productos h3{margin-top: 10;}
+
+#nuestros-productos p{
+    display: none;
+}
+
+
+.producto:first-child{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/adidas.png);
+}
+.producto:nth-child(2){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/fila.png);
+
+}
+.producto:nth-child(3){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/nike.png);
+
+}
+.producto:nth-child(4){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/puma.png);
+
+}
+.producto:nth-child(5){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/vans.png);
+
+}
+
+
+
+.producto_m:first-child{
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/adidas.png);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+}
+.producto_m:nth-child(2){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/fila.png);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+}
+.producto_m:nth-child(3){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/nike.png);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+}
+.producto_m:nth-child(4){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/puma.png);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+}
+.producto_m:nth-child(5){
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Imagenes/vans.png);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 15px;
+}
